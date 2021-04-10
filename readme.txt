@@ -1,3 +1,4 @@
+#1
 mkdir movieql
 cd movieql
 yarn init
@@ -20,6 +21,10 @@ package.json에 "scripts" 추가
     "start": "nodemon --exec babel-node index.js"
   }
 npm start 확인
+
+#2. RestAPI Wrapping
+yarn add node-fetch
+
 
 
 

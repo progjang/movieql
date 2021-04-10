@@ -11,12 +11,21 @@ type Movie {
   score: Int!
 }
 
+type APIMovie {
+  id: Int!
+  title: String!
+  rating: Float
+}
+
 type Query {
   name: String!
   people: [Person]!
   person(id: Int!): Person
   movies: [Movie]!
   movie(id: Int!): Movie
+  apimovies(limit: Int, rating: Float): [APIMovie]!
+  apimovie(id: Int!): APIMovie!
+  apisuggestions(id: Int!): [APIMovie]!
 }
 
 type Mutation {
